@@ -383,3 +383,18 @@ a .x-icon{
     border: 2px;
     padding-left: 40px;
 }
+.rights-reserved{
+    border-top: solid 1px;
+    border-color: rgba(255, 119, 0, 0.507);
+}
+.rights-reserved p{
+    padding-top: 10px;
+}
+.scroll-up{
+    text-align: center;
+    padding: 10px;
+}
+
+.scroll-up a{
+    color: rgb(255, 174, 0);
+}
