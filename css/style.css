@@ -371,6 +371,10 @@ h1 {
     color: rgb(16, 93, 247);
 }
 
+.icons .disc-icon:hover{
+    color: #71368A;
+}
+
 .icons .insta-icon:hover{
     color: rgb(146, 0, 25);
 }
