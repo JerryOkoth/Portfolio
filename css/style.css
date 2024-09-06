@@ -63,20 +63,42 @@ img{
 }
 
 /* Hero-section */
-.hero{
-    margin-bottom: 50px;
+.hero-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    /* background-color: #016ff5; */
+    gap: 50px;
+}
+.hero-detail{
+    width: 60%;
+    padding: 80px ;
+    /* background-color: red; */
+}
+.hero-icons{
+    padding: 40px;
+}
+
+.hero-icons a{
+    padding: 10px;
+}
+.img-section{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+.img-section img{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 190px 190px;
 }
 
 
-/* .hero .container{
-    background: url('../images/eat\ code\ sleep.jpeg') no-repeat;
-    background-size: contain;
-    background-position: center bottom;
-    height: 1000px;
-} */
-.hero .hero-content{
-    width: 100%;
-}
+
 /* utility classes */
 .container{
     max-width: 1100px;
@@ -88,6 +110,9 @@ img{
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.about-container h3{
+    text-align: center;
 }
 
 .skills-container{
