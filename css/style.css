@@ -29,10 +29,12 @@ img{
     max-width: 100%;
 }
 
+/* Header Section */
+
 
 /* Navbar */
 .navbar{
-    padding: 20px;
+    padding:0 20px 20px 0;
 }
 
 .navbar .container{
@@ -95,7 +97,7 @@ img{
     width: 300px;
     height: 300px;
     padding: 20px;
-    border-radius: 190px 190px;
+    border-radius: 290px 290px;
 }
 
 
@@ -138,6 +140,9 @@ img{
     max-width: 1100px;
     margin: 0 auto;
     padding: 8px 15px;
+}
+.contact-container h3{
+    text-align: center;
 }
 
 .info-item h2 {
@@ -332,7 +337,7 @@ h1 {
 }
 
 .progress {
-    background-color: #016ff5;
+    background-color: orange;
     height: 100%;
 }
 
