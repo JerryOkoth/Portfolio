@@ -54,7 +54,7 @@ img{
 }
 
 .navbar ul li a:hover{
-    color: #4891ff;
+    color: orange;
 }
 
 .navbar ul li a i{
@@ -154,11 +154,16 @@ img{
 }
 
 .contact-form {
-    margin-top: 30px;
+    padding: 5px 0;
+    width: 60%;
+    margin: 0 auto;
 }
 
-.contact-form h2 {
+.contact-form h4 {
     color: #333;
+    text-align: center;
+    font-style: italic;
+    padding: 0 0 0 15px;
 }
 
 .contact-form form {
@@ -170,6 +175,7 @@ img{
     margin: 10px 0 5px;
     color: #666;
 }
+
 
 .contact-form input,
 .contact-form textarea {
@@ -278,8 +284,10 @@ img{
 
 .contact-form button {
     padding: 10px 15px;
+    width: 30%;
+    margin: 0 auto;
     border: none;
-    background-color: #007ec8;
+    background-color: orange;
     color: white;
     font-size: 16px;
     cursor: pointer;
