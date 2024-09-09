@@ -72,10 +72,10 @@ img{
     padding: 15px;
     display: flex;
     /* background-color: #016ff5; */
-    gap: 50px;
+    gap: 30px;
 }
 .hero-detail{
-    width: 60%;
+    width: 50%;
     padding: 80px ;
     /* background-color: red; */
 }
@@ -97,7 +97,8 @@ img{
     width: 300px;
     height: 300px;
     padding: 20px;
-    border-radius: 290px 290px;
+    border: dotted 2px orange;
+    border-radius: 50%;
 }
 
 
@@ -441,3 +442,48 @@ a .x-icon{
 .scroll-up a{
     color: rgb(255, 174, 0);
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+      /* background-color: #007ec8; */
+
+
+      /* Nav bar */
+
+
+    
+    
+      /* Hero Section */
+    .hero-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .hero-icons{
+        padding: 10px;
+    }
+
+    .hero-detail{
+        width: 80%;
+        padding: 80px;
+    }
+
+    .img-section{
+        width: 400px;
+        height: 200px;
+        padding: 10px 10px 10px 50px;
+    }
+    }
+  
+  }
+
+  /* Styles for mobile (screen width 480px or less) */
+/* @media only screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  
+    
+  } */
