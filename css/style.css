@@ -501,6 +501,18 @@ a .x-icon{
     body {
       font-size: 12px;
     }
+
+    .hero-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
   
+    .img-section{
+        width: 400px;
+        height: 200px;
+        padding: 10px 10px 10px 50px;
+        display: hide;
+    }
     
   } */
