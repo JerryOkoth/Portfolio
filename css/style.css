@@ -101,7 +101,8 @@ ul{
 
 .hero-icons a{
     color: orange;
-    padding: 10px;
+    padding: 5px;
+    display: flex;
 }
 .hero-icons a{
     transition: 1.2ms;
@@ -506,6 +507,10 @@ a .x-icon{
         padding: 80px;
     }
 
+    .hero-icons{
+        display: flex;
+    }
+
     .img-section{
         width: 40%;
         /* height: auto; */
@@ -517,25 +522,17 @@ a .x-icon{
   }
 
   /* Styles for mobile (screen width 480px or less) */
-/* @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     body {
       font-size: 12px;
     }
 
-    .hero-container{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10px;
-  
-    .img-section{
-        width: 400px;
-        height: 200px;
-        padding: 10px 10px 10px 50px;
-        display: hide;
+    .hero-icons{
+        display: flex;
     }
+
     
-  } */
+  }
 
 
 
