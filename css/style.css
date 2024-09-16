@@ -17,7 +17,8 @@ body{
     font-family: 'poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: #fff;
+    background: #1E1E1E;
+    color: #dad7d7;
 }
 
 /* Header section */
