@@ -22,6 +22,7 @@ body{
 
 /* Header section */
 
+
 .header-container{
     max-width: 1100px;
     display: flex;
@@ -31,7 +32,7 @@ body{
 }
 
 nav ul {
-    background: pink;
+    background: rgb(36, 33, 33);
     position: fixed;
     z-index: 999;
     top: 0;
@@ -52,12 +53,13 @@ nav ul {
         }
 
         a{
-            color: black;
+            color: #eee;
             text-decoration: none;
             font-size: 1.5rem;
 
             &:hover{
                 text-decoration: underline;
+                color: orange;
             }
         }
     }
@@ -552,8 +554,8 @@ a .x-icon{
 
 
     .divider{
-        height: 50px;
-        width: 1px;
+        height: 20px;
+        width: 2px;
         border-right: 1px solid orange;
     }
 
