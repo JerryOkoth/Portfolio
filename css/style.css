@@ -123,44 +123,10 @@ ul{
 }
 
 img{
-    max-width: 100%;
+    padding-top: 50px;
+    max-width: 70%;
 }
 
-/* Header Section */
-
-
-/* Navbar */
-.navbar{
-    padding:0 20px 20px 0;
-}
-
-.navbar .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar .main-menu ul{
-    display: flex;
-}
-.navbar ul li a{
-    padding: 10px 20px;
-    display: block;
-    font-weight: 600;
-    transition: 0.5s;
-}
-
-.navbar ul li a:hover{
-    color: orange;
-}
-
-.navbar ul li a i{
-    margin-right: 10px;
-}
-
-.navbar ul li:last-child a{
-    margin-left: 10px;
-}
 
 /* Hero-section */
 .hero-container{
