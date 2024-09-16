@@ -349,6 +349,9 @@ ul{
 h1 {
     margin: 20px, 0;
 }
+.heading-skills{
+    text-align: center;
+}
 
 .skill-category {
     margin-bottom: 30px;
