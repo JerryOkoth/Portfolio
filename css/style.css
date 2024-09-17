@@ -97,6 +97,7 @@ ul{
 }
 .hero-icons{
     padding: 40px;
+    display: flex;
 }
 
 .hero-icons a{
@@ -503,12 +504,18 @@ a .x-icon{
         padding-top: 20px;
     }
     .hero-detail{
-        width: 80%;
+        width: 100%;
         padding: 80px;
+        justify-content: center;
+        /* background-color: #4891ff; */
     }
+
+    
 
     .hero-icons{
         display: flex;
+        /* background-color: red; */
+        padding: 19px 0;
     }
 
     .img-section{
