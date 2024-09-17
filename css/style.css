@@ -104,10 +104,33 @@ ul{
     color: orange;
     padding: 5px;
     display: flex;
-}
-.hero-icons a{
     transition: 1.2ms;
+    opacity: 0;
+    transform: translateY(50px);
 }
+
+
+/* Keyframes for fade-in and bouncing effect */
+@keyframes fadeInBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start from 50px below */
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(-20px); /* Bounce upwards */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Settle in place */
+    }
+}
+
+/* Define animation class */
+.fade-bounce {
+    animation: fadeInBounce 1s ease forwards; /* Animation duration of 1 second */
+}
+
 
 .hero-icons .git-icon :hover{
     color: rgb(146, 0, 80);
@@ -148,19 +171,19 @@ ul{
     padding: 0 15px;
     /* background-color: green; */
 }
+
 .heading-about{
     text-align: center;
 }
 
 .about-text1{
     width: 45%;
-    background-color: rgb(39, 38, 40);
+    background-color: #aecacd;
     border-radius: 30px;
     line-height: 1.5rem;
     padding: 15px;
 }
 .about-text2{
-    float: right;
     width: 45%;
     background-color: #342f27;
     border-radius: 30px;
@@ -172,7 +195,7 @@ ul{
     width: 45%;
     border-radius: 30px;
     padding: 15px;
-    background-color: lightgray;
+    background-color: rgb(155, 121, 121);
     line-height: 1.5rem;
 }
 
