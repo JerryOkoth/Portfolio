@@ -505,9 +505,9 @@ a .x-icon{
     }
     .hero-detail{
         width: 100%;
-        padding: 80px;
+        padding: 88px;
         justify-content: center;
-        /* background-color: #4891ff; */
+        background-color: #4891ff;
     }
 
     
