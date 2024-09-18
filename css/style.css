@@ -279,7 +279,9 @@ ul{
 
 
 /* skills  Section*/
-
+.skills-wrap{
+    padding-bottom: 500px;
+}
 .skills-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -297,15 +299,15 @@ h1 {
 }
 
 .skill-category {
-    background-color: #f9f9f9;
+    background-color: #453838;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-category h2 {
-    color: #555;
-    border-bottom: 2px solid #ddd;
+    color: #d8d8d8;
+    border-bottom: 2px solid rgb(160, 116, 35);
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -315,17 +317,14 @@ h1 {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    color: #b9b9b9;
 }
 
-.skill span {
-    flex: 1;
-    color: #666;
+.skill span{
+    color: #d8d8d8;
 }
 
-.skill span:hover {
-    color: #4caf50;
-    transition: color 0.3s ease;
-}
+
 
 .skill span::after {
     content: attr(data-description);
@@ -345,23 +344,13 @@ h1 {
     opacity: 1;
 }
 
-.progress-bar {
-    flex: 3;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 8px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
 
-.progress {
-    background-color: #4caf50;
-    height: 100%;
-    border-radius: 10px;
-    width: 0;
-    animation: fillBar 2s ease-out forwards;
-}
+
+
+
+
+
+
 
 @keyframes fillBar {
     from { width: 0; }
