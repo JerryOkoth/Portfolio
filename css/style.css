@@ -19,6 +19,7 @@ body{
     line-height: 1.5;
     background: #0e0d0b;
     color: #dad7d7;
+    scroll-behavior: smooth;
 }
 
 /* Header section */
@@ -28,8 +29,8 @@ body{
     max-width: 1100px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 15px;
+    margin: 0;
+    padding: 0 40px;
 }
 
 nav ul {
@@ -93,7 +94,15 @@ ul{
 .hero-detail{
     width: 50%;
     padding: 80px ;
-    /* background-color: red; */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-in, transform 1s ease-in;
+    
+}
+
+.hero-detail.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 .hero-icons{
     padding: 40px;
@@ -126,7 +135,6 @@ ul{
     }
 }
 
-/* Define animation class */
 .fade-bounce {
     animation: fadeInBounce 1s ease forwards; /* Animation duration of 1 second */
 }
@@ -150,21 +158,36 @@ ul{
 
 .img-section{
     /* background-color: green; */
-    display: flex;
+    display: inline-block;
     align-items: center;
     width: 30%;
     text-align: center;
+    position: relative;
 }
 .img-section img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     padding: 20px;
-    border: dotted 2px orange;
+    animation: rotate-border 60s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid transparent;
     border-radius: 50%;
+}
+
+@keyframes rotate-border {
+    0% {
+        transform: rotate(0deg);
+        border-color: orange;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-color: orange;
+    }
 }
 
 
 /* About Section */
+
 .about-container{
     max-width: 1100px;
     margin: 0 auto;
