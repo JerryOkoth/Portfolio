@@ -110,7 +110,7 @@ ul{
 }
 
 .hero-icons a{
-    color: orange;
+    color: hsl(38, 67%, 50%);
     padding: 5px;
     display: flex;
     transition: 1.2ms;
@@ -135,6 +135,7 @@ ul{
     }
 }
 
+
 .fade-bounce {
     animation: fadeInBounce 1s ease forwards; /* Animation duration of 1 second */
 }
@@ -153,36 +154,21 @@ ul{
 }.hero-icons .in-icon :hover{
     color: rgb(0, 49, 146);
 }.hero-icons .x-icon :hover{
-    color: rgb(0, 64, 95);
+    color: rgb(255, 255, 255);
 }
 
 .img-section{
-    /* background-color: green; */
     display: inline-block;
-    align-items: center;
     width: 30%;
+    height: 30%;
     text-align: center;
-    position: relative;
 }
 .img-section img{
     width: 200px;
     height: 200px;
     padding: 20px;
-    animation: rotate-border 60s linear infinite;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 5px solid transparent;
+    border: dotted 2px hsl(38, 67%, 32%);
     border-radius: 50%;
-}
-
-@keyframes rotate-border {
-    0% {
-        transform: rotate(0deg);
-        border-color: orange;
-    }
-    100% {
-        transform: rotate(360deg);
-        border-color: orange;
-    }
 }
 
 
@@ -588,9 +574,11 @@ a .x-icon{
       /* Hero Section */
     .hero-container{
         flex-direction: column-reverse;
+        display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 20px;
+        text-align: center;
+        padding-top: 40px;
     }
     .hero-detail{
         width: 100%;
@@ -603,17 +591,15 @@ a .x-icon{
 
     .hero-icons{
         display: flex;
-        /* background-color: red; */
         padding: 19px 0;
+        justify-content: center;
     }
 
     .img-section{
-        width: 40%;
-        /* height: auto; */
-        /* padding: 10px 10px 10px 50px; */
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
         justify-content: center;
-        /* background-color: #4cae4c; */
-        padding-top: 20px;
     }
     }
   
