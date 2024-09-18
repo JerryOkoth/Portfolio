@@ -22,6 +22,10 @@ body{
     scroll-behavior: smooth;
 }
 
+span {
+    color: orange;
+}
+
 /* Header section */
 header{
     max-width: 1100px;
@@ -443,7 +447,7 @@ h1 {
 
 .contact-form label {
     margin: 10px 0 5px;
-    color: #666;
+    color: #b9b9b9;
 }
 
 
@@ -454,6 +458,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+    
 }
 
 
