@@ -33,6 +33,21 @@ window.addEventListener('load', () => {
 
 
 
+// Scroll animation to make paragraphs fade in
+const aboutTexts = document.querySelectorAll('.about-container p');
+
+window.addEventListener('scroll', () => {
+    const triggerPoint = window.innerHeight / 1.2; // Trigger point for animation
+    
+    aboutTexts.forEach(text => {
+        const textTop = text.getBoundingClientRect().top;
+        
+        if (textTop < triggerPoint) {
+            text.classList.add('visible');
+        }
+    });
+});
+
 
 
 
