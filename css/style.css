@@ -369,9 +369,9 @@ h1 {
 .project-wrap{
     max-width: 1100px;
     margin: 0 auto;
+    border-radius: 10px;
     display: flex;
     padding: 50px;
-    background-color: #484848;
     gap: 15px;
     text-align: center;
 }
@@ -807,13 +807,83 @@ a .x-icon{
     }
 
     }
+    /* Project section */
+    .project-wrap {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .project-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .neon-glow {
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-links a {
+        padding: 8px 16px;
+    }
+
+    .project-wrap {
+        gap: 20px;
+    }
   
+
   }
 
   /* Styles for mobile (screen width 480px or less) */
 @media only screen and (max-width: 480px) {
     body {
       font-size: 12px;
+    }
+    .project-wrap {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+    .project-card {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .neon-glow {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-links a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .project-details {
+        margin-bottom: 15px;
+    }
+
+    .project-card:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .hero-icons{
@@ -878,14 +948,22 @@ a .x-icon{
     }
 
     .project-wrap {
-        flex-direction: column;
-        padding: 50px;
-        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 30px; /* Add some space between cards */
     }
 
     .project-card {
-        max-width: 100%;
-        padding: 15px;
+        max-width: 500px;
+        margin: 0 auto; /* Center the card horizontally */
+    }
+
+    .neon-glow {
+        font-size: 2rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
     }
 
     .project-image {
@@ -894,11 +972,12 @@ a .x-icon{
     }
 
     .project-links a {
-        padding: 8px 16px;
+        padding: 12px 24px;
+        font-size: 1rem;
     }
 
     .project-wrap {
-        gap: 20px;
+        gap: 40px;
     }
 }
 
