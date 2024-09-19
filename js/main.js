@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
     icons.forEach((icon, index) => {
         setTimeout(() => {
             icon.classList.add('fade-bounce');
-        }, index * 200); // Add delay to make each icon animate sequentially
+        }, index * 200); 
     });
 });
 
@@ -37,7 +37,7 @@ window.addEventListener('load', () => {
 const aboutTexts = document.querySelectorAll('.about-container p');
 
 window.addEventListener('scroll', () => {
-    const triggerPoint = window.innerHeight / 1.2; // Trigger point for animation
+    const triggerPoint = window.innerHeight / 1.2; 
     
     aboutTexts.forEach(text => {
         const textTop = text.getBoundingClientRect().top;
@@ -47,6 +47,28 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+
+
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function() {
+    const projectImages = document.querySelectorAll(".project-image");
+
+    // Function to add 'loaded' class to images when they finish loading
+    projectImages.forEach((img) => {
+        img.addEventListener("load", () => {
+            img.classList.add("loaded");
+        });
+
+        // Preloading images: if already loaded
+        if (img.complete) {
+            img.classList.add("loaded");
+        }
+    });
+});
+
+
+                
 
 
 

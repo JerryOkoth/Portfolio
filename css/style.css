@@ -280,7 +280,7 @@ ul{
 
 /* skills  Section*/
 .skills-wrap{
-    padding-bottom: 500px;
+    padding-bottom: 300px;
 }
 .skills-container {
     max-width: 1100px;
@@ -363,40 +363,52 @@ h1 {
 
 
 /* Project section */
-
-.project-container{
+.projects {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    position: relative;
+    z-index: 1;
 }
 
-
-.project {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 8px 15px;
-    background-color: #fff;
-    margin-bottom: 20px;
+.project-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
+    max-width: 350px;
+    text-align: center;
 }
 
-.project-title {
-    margin-top: 0;
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
+
 
 .project-image {
-    width: 50%;
-    height: 30%;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-description {
     font-size: 1rem;
-    margin-bottom: 15px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .project-details h3 {
-    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .project-details ul {
@@ -405,26 +417,126 @@ h1 {
 }
 
 .project-details li {
-    background-color: #eee;
-    padding: 5px;
-    margin: 5px 0;
-    border-radius: 4px;
-    display: inline-block;
+    font-size: 0.95rem;
+    color: #555;
 }
+
 
 .project-links a {
     display: inline-block;
-    background-color: #007ec8;
+    /* background-color: #007bff; */
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin-top: 10px;
+    border-radius: 5px;
     text-decoration: none;
-    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-.project-links a:hover {
-    background-color: #4cae4c;
+body.dark-mode .projects {
+    background-color: #1e1e1e;
 }
+
+body.dark-mode .project-card {
+    background-color: rgba(30, 30, 30, 0.85);
+    color: #f0f0f0;
+}
+
+body.dark-mode .project-title, body.dark-mode .project-details h3 {
+    color: #fff;
+}
+
+body.dark-mode .project-description, body.dark-mode .project-details li {
+    color: #ccc;
+}
+
+body.dark-mode .project-links a {
+    background-color: #ffa500;
+}
+
+body.dark-mode .project-links a:hover {
+    background-color: #ff7f00;
+}
+
+
+/* Neon Glow for Project Titles */
+.neon-glow {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.neon-glow::before,
+.neon-glow::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    opacity: 0.5;
+    filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.neon-glow:hover::before {
+    box-shadow: 0 0 15px rgb(255, 162, 0), 0 0 30px #ffb700, 0 0 45px rgb(255, 200, 0), 0 0 60px #ffbf00;
+}
+
+/* Neon Link */
+.neon-link {
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #ffa600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.neon-link:hover {
+    background-color: #ff00ff;
+    color: #fff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+}
+
+/* Project Card with 3D Tilt */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Project image parallax effect */
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.project-card:hover 
+.project-image 
+{transform: scale(1.1);}
+
+
 
 
 
