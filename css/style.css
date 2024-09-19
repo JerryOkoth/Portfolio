@@ -307,7 +307,6 @@ h1 {
 }
 
 .skill-category {
-    /* background-color: #; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -876,6 +875,30 @@ a .x-icon{
 
     .about-container p {
         font-size: 1rem;
+    }
+
+    .project-wrap {
+        flex-direction: column;
+        padding: 50px;
+        gap: 30px;
+    }
+
+    .project-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-links a {
+        padding: 8px 16px;
+    }
+
+    .project-wrap {
+        gap: 20px;
     }
 }
 
