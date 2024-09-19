@@ -401,6 +401,9 @@ h1 {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
+.project-card ul{
+    color: #dad7d7;
+}
 
 .project-image {
     width: 30%;
