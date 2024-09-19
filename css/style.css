@@ -300,14 +300,14 @@ ul{
 }
 
 h1 {
-    margin: 20px, 0;
+    margin: 20px;
 }
 .heading-skills{
     text-align: center;
 }
 
 .skill-category {
-    background-color: #453838;
+    /* background-color: #; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -315,7 +315,7 @@ h1 {
 
 .skill-category h2 {
     color: #d8d8d8;
-    border-bottom: 2px solid rgb(160, 116, 35);
+    border-bottom: 2px solid #a07423;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -353,31 +353,43 @@ h1 {
     opacity: 1;
 }
 
-
-@keyframes fillBar {
-    from { width: 0; }
-    to { width: 80%; } /* Adjust per skill level */
+.stars{
+    color: goldenrod;
 }
 
 
-
-
 /* Project section */
+.projects{
+    max-width: 1100px;
+}
+.projects-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px;
+    background-color: #484848;
+    gap: 15px;
+    text-align: center;
+}
 .projects {
     max-width: 1100px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1.8fr));
+    gap: 60px;
     justify-items: center;
-    position: relative;
+    /* position: relative; */
     z-index: 1;
 }
 
 .project-card {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
-    border-radius: 12px;
+    border-radius: 5px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
@@ -392,21 +404,19 @@ h1 {
 
 
 .project-image {
-    width: 100%;
-    height: auto;
+    width: 30%;
+    height: 30%;
     border-radius: 8px;
     margin-bottom: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-description {
-    font-size: 1rem;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .project-details h3 {
-    font-size: 1.2rem;
     color: #333;
     margin-bottom: 10px;
 }
@@ -417,14 +427,12 @@ h1 {
 }
 
 .project-details li {
-    font-size: 0.95rem;
     color: #555;
 }
 
 
 .project-links a {
     display: inline-block;
-    /* background-color: #007bff; */
     color: #fff;
     padding: 10px 20px;
     margin-top: 10px;
@@ -486,7 +494,7 @@ body.dark-mode .project-links a:hover {
 }
 
 .neon-glow:hover::before {
-    box-shadow: 0 0 15px rgb(255, 162, 0), 0 0 30px #ffb700, 0 0 45px rgb(255, 200, 0), 0 0 60px #ffbf00;
+    box-shadow: 0 0 15px #ffa200, 0 0 30px #ffb700, 0 0 45px rgb(255, 200, 0), 0 0 60px #ffbf00;
 }
 
 /* Neon Link */
@@ -502,9 +510,9 @@ body.dark-mode .project-links a:hover {
 }
 
 .neon-link:hover {
-    background-color: #ff00ff;
+    background-color: #ffa200;
     color: #fff;
-    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    box-shadow: 0 0 10px hsl(38, 55%, 51%), 0 0 30px hsl(38, 55%, 51%), 0 0 45px hsl(38, 55%, 51%), 0 0 60px hsl(38, 55%, 51%)
 }
 
 /* Project Card with 3D Tilt */
