@@ -554,8 +554,8 @@ body.dark-mode .project-links a:hover {
     margin: 0 auto;
     padding: 2rem;
     color: #fff;
-    background: linear-gradient(135deg, #f3ec78, #af4261);
-    border-radius: 15px 15px 0 0;
+    background: linear-gradient(135deg, #41402b, #af4261);
+    border-radius: 10px 10px 0 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
