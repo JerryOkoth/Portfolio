@@ -114,6 +114,11 @@ ul{
 .hero-icons{
     padding: 40px;
     display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-icons :hover {
+    transform: scale(1.4);
 }
 
 .hero-icons a{
@@ -124,7 +129,6 @@ ul{
     opacity: 0;
     transform: translateY(50px);
 }
-
 
 /* Keyframes for fade-in and bouncing effect */
 @keyframes fadeInBounce {
@@ -582,7 +586,6 @@ body.dark-mode .project-links a:hover {
     padding: 0.8rem 2rem;
     border: none;
     border-radius: 50px;
-    font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
@@ -646,7 +649,6 @@ body.dark-mode .project-links a:hover {
 }
 .icons a {
     color: #fff;
-    font-size: 1.5rem;
     margin: 0 10px;
     transition: transform 0.3s ease-in-out;
 }
