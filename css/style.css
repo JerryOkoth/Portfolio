@@ -26,6 +26,10 @@ span {
     color: orange;
 }
 
+h3{
+    text-transform: uppercase;
+}
+
 /* Header section */
 header{
     max-width: 1100px;
