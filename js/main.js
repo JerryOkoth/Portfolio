@@ -50,6 +50,12 @@ window.addEventListener('scroll', () => {
 
 
 
+// Contact/ Footer
+
+
+
+
+
 
 
 

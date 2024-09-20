@@ -548,31 +548,54 @@ body.dark-mode .project-links a:hover {
 
 
 
-
-
-
+/* Contact section */
 .contact-container{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 30px 15px;
+    padding: 2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.footer{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 8px 15px;
+.contact-heading span {
+    color: #ffbe0b;
 }
+
+.input-field {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    border-color: #ffbe0b;
+}
+
+.submit-btn {
+    background: linear-gradient(90deg, #ff8c00, #ffbe0b);
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #ffbe0b, #ff8c00);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .contact-container h3{
     text-align: center;
 }
 
-.info-item h2 {
-    margin-bottom: 10px;
-}
-
-.info-item p {
-    margin: 0;
-}
 
 .contact-form {
     padding: 5px 0;
@@ -608,63 +631,83 @@ body.dark-mode .project-links a:hover {
     
 }
 
-
-/* Buttons */
-.btn{
-    display: inline-block;
-    padding: 13px 20px;
-    background: var(--light-color);
-    color: #333;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn:hover{
-    opacity: 0.8;
-}
-.btn-primary{
-    background: var(--primary-color);
-    color: var(--primary-color);
-}
-
-.btn-dark{
-    background: var(--dark-color);
-    color: #fff;
-}
-
-.btn-light{
-    background: var(--light-color);
-    color: #111;
-}
-
-.btn-block{
-    display: inline-block;
-    width: 100%;
-}
-
-.hero-content .hero-buttons{
-    padding-top: 12px;
-}
-
-.contact-form button {
-    padding: 10px 15px;
-    width: 30%;
+/* Footer */
+.footer{
+    max-width: 1100px;
     margin: 0 auto;
-    border: none;
-    background-color: orange;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding-top: 20px;
 }
 
-.contact-form button:hover {
-    background-color: #4cae4c;
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #f7f7f7;
+}
+.icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons a:hover {
+    transform: scale(1.2);
+}
+
+.icons .git-icon:hover{
+    color: rgb(110, 2, 57);
+}
+
+.icons .in-icon:hover{
+    color: rgb(16, 93, 247);
+}
+
+.icons .disc-icon:hover{
+    color: #71368A;
+}
+
+.icons .insta-icon:hover{
+    color: rgb(146, 0, 25);
+}
+
+.icons .x-icon:hover{
+    color: rgb(81, 157, 198);
+}
+
+a .x-icon{
+    border: 2px;
+    padding-left: 40px;
+}
+.rights-reserved{
+    border-top: solid 1px;
+    border-color: rgba(255, 119, 0, 0.507);
+}
+
+.scroll-up{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.scroll-up a {
+    color: #fff;
+    /* font-size: 2rem; */
+    transition: color 0.3s ease-in-out;
+}
+
+.scroll-up a:hover {
+    color: #ffbe0b;
+}
+
+.rights-reserved{
+    border-top: solid 1px;
+    border-color: rgba(255, 119, 0, 0.507);
+}
+
+.rights-reserved p {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 1rem;
 }
 
 
@@ -710,56 +753,7 @@ body.dark-mode .project-links a:hover {
 .create{
     padding: 20px, 0px;
 }
-/* Icons */
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #f7f7f7;
-}
-.icons a{
-    transition: 1.2ms;
-}
 
-.icons .git-icon:hover{
-    color: rgb(110, 2, 57);
-}
-
-.icons .in-icon:hover{
-    color: rgb(16, 93, 247);
-}
-
-.icons .disc-icon:hover{
-    color: #71368A;
-}
-
-.icons .insta-icon:hover{
-    color: rgb(146, 0, 25);
-}
-
-.icons .x-icon:hover{
-    color: rgb(81, 157, 198);
-}
-
-a .x-icon{
-    border: 2px;
-    padding-left: 40px;
-}
-.rights-reserved{
-    border-top: solid 1px;
-    border-color: rgba(255, 119, 0, 0.507);
-}
-.rights-reserved p{
-    padding-top: 10px;
-}
-.scroll-up{
-    text-align: center;
-    padding: 10px 0;
-}
-
-.scroll-up a{
-    color: rgb(255, 174, 0);
-}
 
 @media only screen and (max-width: 768px) {
     body {
