@@ -427,10 +427,14 @@ h1 {
     margin-bottom: 10px;
 }
 
-.project-details h3 {
-    color: #333;
+.project-details h3,h4{
+    color: #c8b099;
     margin-bottom: 10px;
 }
+
+/* .project-details p{
+    text-align: left;
+} */
 
 .project-details ul {
     list-style: none;
@@ -438,7 +442,7 @@ h1 {
 }
 
 .project-details li {
-    color: #555;
+    color: #a8a7a7;
 }
 
 
