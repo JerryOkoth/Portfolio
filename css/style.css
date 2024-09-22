@@ -241,7 +241,7 @@ ul{
 .about-container p {
     line-height: 1.8;
     margin: 10px 0;
-    color: var(--text-color);
+    /* color: var(--text-color); */
     text-align: center;
 }
 
