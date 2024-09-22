@@ -50,7 +50,40 @@ window.addEventListener('scroll', () => {
 
 
 
-// Contact/ Footer
+
+// Contact section
+
+// document.querySelector('#contact-form').addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+//     // Disable the button and add loading state
+//     const submitBtn = document.getElementById('submit-btn');
+//     submitBtn.textContent = 'Sending...';
+//     submitBtn.classList.add('loading');
+
+//     setTimeout(() => {
+//         // Reset the form after successful submission simulation
+//         document.getElementById('contact-form').reset();
+//         submitBtn.textContent = 'Send Message';
+//         submitBtn.classList.remove('loading');
+//         alert('Message sent successfully!');
+//     }, 2000);
+// });
+
+
+// Footer Section
+
+document.querySelector('.scroll-up a').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+
+
 
 
 

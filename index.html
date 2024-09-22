@@ -314,8 +314,7 @@
         <div class="project-card">
             <h2 class="project-title neon-glow">Robo-Friends</h2>
             <img src="https://robohash.org/yyyyyyyyyyy" alt="Screenshot of Project" class="project-image">
-            <p class="project-description">The Robofriends web app is a dynamic React-based application that allows users to search and 
-                filter through a list of robot characters. It features a responsive user interface with over 10 reusable components, improving the overall modularity and maintainability of the code. The app leverages React hooks and state management to handle real-time search functionality, providing a smooth and efficient user experience. Optimized API calls ensure fast loading times, while the app is fully cross-browser compatible and mobile responsive, making it accessible on various devices.</p>
+            <p class="project-description">Robofriends is a dynamic React web based application that filter's through a list of robot characters. </p>
             <div class="project-details">
                 <h4>Technologies Used:</h4>
                 <ul>
@@ -324,7 +323,7 @@
                     <li>JavaScript</li>
                     <li>React</li>
                 </ul>
-                <h4>Challenges and Solutions:</h4>
+                <!-- <h4>Challenges and Solutions:</h4>
                 <p>
                     Challenge:<br>Fetching data from an external API and ensuring proper handling of asynchronous calls and potential errors, such as network failures or incorrect data formatting.<br>
                     Solution:<br>Using JavaScript's fetch API, along with error handling techniques to manage failed requests and loading states.
@@ -344,7 +343,7 @@
                     Impact:<br>Optimized API calls, improving load times by 15%, which contributed to a faster and more efficient app.
                     Ensuring Mobile Responsiveness:<br>
                     Responsibility:<br>Ensured the web app was fully responsive, adjusting layouts and styling to work seamlessly across various devices and screen sizes.<br>
-                    Impact:<br>Achieved a 25% increase in mobile user engagement by making the app accessible on mobile devices.</p>
+                    Impact:<br>Achieved a 25% increase in mobile user engagement by making the app accessible on mobile devices.</p> -->
                 <div class="project-links">
                     <a href="https://jerryokoth.github.io/robofriends/" target="_blank" class="neon-link">View Live Project</a>
                     <a href="https://github.com/JerryOkoth/robofriends" target="_blank" class="neon-link">View on GitHub</a>
@@ -353,46 +352,52 @@
         </div>
         </div>
     </section>
-
        <!-- Contact section -->
-       <section class="contact" id="contact">
-            <div class="contact-container fade-in">
-                <h3 class="contact-heading text-xl">Contact <span>Me</span></h3>
-                <div class="contact-form">
-                    <h4 class="heading-form text-md" style="color: rgb(211, 211, 211);">Let<span>'</span>s talk about your next project <strong><span style="color: orange;">!</span></strong></h4>
-                    <form action="#" method="#">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-        
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
+    <section class="contact" id="contact">
+        <div class="contact-container fade-in">
+        <h3 class="contact-heading text-xl">Contact <span>Me</span></h3>
+        <div class="contact-form">
+            <h4 class="heading-form text-md">Let<span>'</span>s talk about your next project <strong><span style="color: orange;">!</span></strong></h4>
+            <form id="contact-form">
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
-       </section>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-field">
+                <i class="fas fa-comment"></i>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
+            </form>
+        </div>
+        </div>
+    </section>
        <!-- Footer section -->
-        <footer class="footer">
-            <div class="icons fade-in">
-                <a class="git-icon" href="https://github.com/JerryOkoth"><i class="fa-brands fa-github"></i></a>
-                <a class="in-icon" href="https://www.linkedin.com/in/jerry-okoth-7a9647284/"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="disc-icon" href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
-                <a class="insta-icon" href="https://www.instagram.com/j3rry_x1/"><i class="fa-brands fa-instagram"></i></a>
-                <a class="x-icon" href="https://x.com/Jerry66267683"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
-            <div class="scroll-up">
-                <a href="index.html"><i class="fa-sharp-duotone fa-solid fa-angle-up"></i></a>
-            </div>
-            <div class="rights-reserved">
-                <p>&copy; 2024 JERRY OKOTH.All rights reserved.</p>
-            </div>
-        </footer>
+    <footer class="footer">
+    <div class="icons fade-in">
+        <a class="git-icon" href="https://github.com/JerryOkoth" aria-label="GitHub Profile" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a class="in-icon" href="https://www.linkedin.com/in/jerry-okoth-7a9647284/" aria-label="LinkedIn Profile" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="disc-icon" href="https://discord.com/channels/@me" aria-label="Discord Profile" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a class="insta-icon" href="https://www.instagram.com/j3rry_x1/" aria-label="Instagram Profile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="x-icon" href="https://x.com/Jerry66267683" aria-label="X (Twitter) Profile" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="scroll-up">
+        <a href="#" class="scroll-up-btn" aria-label="Scroll to Top">
+            <i class="fa-sharp fa-solid fa-angle-up"></i>
+        </a>
+    </div>
+    <div class="rights-reserved">
+        <p>&copy; 2024 JERRY OKOTH. All rights reserved.</p>
+    </div>
+    </footer>
+
     <script src="js/main.js"></script>
     <script src="app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
 </html>
