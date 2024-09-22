@@ -241,7 +241,6 @@ ul{
 .about-container p {
     line-height: 1.8;
     margin: 10px 0;
-    font-size: 1.1rem;
     color: var(--text-color);
     text-align: center;
 }
