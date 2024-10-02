@@ -893,7 +893,7 @@ a .x-icon{
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem;
-    background: linear-gradient(135deg, #41402b, #af4261);
+    background: rgb(72, 72, 72);
     color: #fff;
     /* border-radius: 10px 10px 0 0; */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
