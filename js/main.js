@@ -12,6 +12,14 @@ closeBtn.addEventListener('click', () =>{
     menu.classList.remove('open')
 })
 
+// Close the menu if clicking outside of it
+document.addEventListener('click', (event) => {
+    // Check if the click is outside the menu and menu button
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target) && !closeBtn.contains(event.target)) {
+        menu.classList.remove('open'); // Hide the menu
+    }
+});
+
 // Hero text
 window.addEventListener('load', () => {
     const heroDetail = document.querySelector('.hero-detail');
