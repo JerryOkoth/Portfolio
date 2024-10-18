@@ -991,7 +991,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-     .hero-container, .skills-container {
+     .skills-container {
         flex-direction: column;
     }
 }
