@@ -990,10 +990,46 @@ h1 {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
      .skills-container {
         flex-direction: column;
     }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: block;
+    }
+
+    .header-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .divider {
+        height: 20px;
+        width: 2px;
+        border-right: 1px solid #FF6F61;
+    }
+
+    nav ul {
+        position: unset;
+        background: none;
+        display: flex;
+        gap: 2em;
+        height: auto;
+        width: auto;
+        transform: translateX(0%);
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+    
 }
 
 /* Large Devices (Desktops) */
