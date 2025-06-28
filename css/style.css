@@ -817,8 +817,8 @@ h1 {
         justify-content: center;
         align-items: start;
         text-align: start;
-        padding-top: 30px;
-        padding-bottom: 0;
+        padding-top: 20px;
+        font-size: 14px;
     }
 
     .hero-detail {
@@ -935,19 +935,20 @@ h1 {
 
     .hero-detail {
         width: 100%;
-        padding: 10px 88px;
+        /* padding: 10px 88px; */
         justify-content: center;
     }
 
     .hero-icons {
         display: flex;
         padding: 20px 0;
-        justify-content: center;
+        justify-content: start;
     }
 
     .img-section {
-        width: 100%;
-        margin-top: 20px;
+        width: 10%;
+        height: auto;
+        /* margin-top: 10px; */
         display: flex;
         justify-content: center;
     }
@@ -958,8 +959,9 @@ h1 {
     }
 
     .about-container {
-        text-align: center;
+        text-align: start;
         font-size: 14px;
+        padding-left: 1rem;
     }
 
     /* Project section */
